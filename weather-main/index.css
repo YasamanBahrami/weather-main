@@ -1,0 +1,182 @@
+*{
+    font-family:'Roboto',sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+
+body{
+    background-image: url(/images/leftBox/effe85b8-f7e1-4de5-b568-0ec6f2dd43ce.jfif);
+
+    background-size: cover;
+}
+
+.card{
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+input{
+    border: none;
+    outline: none;
+    padding: 0.2rem 1rem;
+    border-radius: 15px;
+    background: #3b3d54;
+    color: white;
+    font-family: inherit;
+    font-size: 105%;
+}
+
+.lens{
+    margin: 0.3rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 50%;
+    background: #3b3d54;
+    color: aliceblue;
+}
+/* left-box */
+.left-box{
+    background-image: url(images/leftBox/cloud.jfif);
+    background-size: cover;
+    transition: transform 500ms ease;
+    filter: brightness(90%);
+    opacity: 0.92;
+    border-radius: 25px;
+    height: 26rem;
+    justify-content: space-between;
+    padding: 2rem;
+    margin-right: 0.5rem;
+}
+
+
+.percent{
+
+    float: right;
+}
+
+.temp,.description{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.right-box{
+    display: flex;
+    flex-direction: column;
+    background-color: #252836;
+    opacity: 0.92;
+    color: white;
+    border-radius: 25px;
+    height: 26rem;
+    padding: 2rem;
+    margin-right: 0.5rem;
+
+}
+
+table{
+    color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.left-box:hover{
+   transform: scale(1.1);
+}
+.right-box:hover{
+   transform: scale(1.1);
+}
+
+tr td:nth-child(1) {
+    font-weight: bold;
+    text-align: left;
+}
+
+tr td:nth-child(2) {
+    text-align: right;
+    width: 90%;
+}
+
+.Weekdays {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 1rem;
+    background-color: #303445;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.Days {
+    padding: 0.2rem;
+    border-radius: 1rem;
+    padding-top: 1rem;
+    flex-direction: column;
+    text-align: center;
+    background-color: #303445;
+    transition: background-color 300ms ease;
+}
+
+.Days:hover {
+    background-color: whitesmoke;
+    color: #303445;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.Days:hover img {
+    filter: invert(1);
+}
+
+
+@media only screen and (min-width: 200px) and (max-width: 670px){
+    .left-box{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items:center ;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .right-box{
+        margin-top: 12px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items:center ;
+        font-size: 20px;
+        text-align: center;
+    }
+
+   
+}
+
+@media only screen and (min-width: 200px) and (max-width: 400px){
+    .search {
+        text-align: center;display: flex;
+        justify-content: center;
+}
+
+.left-box::after {
+    content: "";
+    border-radius: 25px;
+    background-image: url(/images/photo-1506691738144-85e7b657fffc.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(90%);
+    opacity: 0.92;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+
+}
+
+
